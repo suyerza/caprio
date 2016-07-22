@@ -1,0 +1,246 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+nav{
+  display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+nav #logo{
+  text-align: right;
+  width: 120px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 10px;
+}
+nav ul li a{
+  color: grey;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover{
+  color: #F55668;
+}
+
+
+header{
+  background-color: #1D1742;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+header h1, h2{
+  margin: 0;
+}
+
+header h2{
+  font-size: 2.5em;
+  animation: slideIn 7s infinite;
+}
+
+
+header h1{
+  color: #F55668;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+h2{
+  color: #1D1742;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 30px;
+}
+h1{
+  color: #F55668;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+}
+
+header .btn{
+     font-size: 1.2em;
+     text-align: center;
+     color: #FFF;
+     border-radius: 100px;
+     padding: 15px 50px;
+     border: 2px solid #F55668;
+     margin-top: 20px;
+     transition: all 0.5s;
+}
+header .btn:hover{
+  background-color: #F55668;
+  color: #1D1742;
+}
+.politiques{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+    animation: slideIn 12ss infinite;
+    animation: tourne 12s infinite;
+}
+
+.politiques ul{
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.politiques li{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border-radius: 100%;
+  margin-top: 30px;
+  background-size: cover;
+  background-image: url(../img/08.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 0 rgba(245,86,104, 0.4), inset 0 0 0 12px rgba(29,23,66,0.4), 0 0px 0px rgba(0,0,0,0);
+  transition: all 0.5s;
+}
+.politiques li:hover{
+  box-shadow: inset 0 0 0 110px rgba(245,86,104, 0.6), inset 0 0 0 16px rgba(245,86,104,0.9), 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.politiques li div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.politiques li:hover div{
+  transform: scale(1);
+}
+
+.politiques li div p{
+ color: white;
+ margin: 0;
+ text-transform: uppercase;
+}
+
+.politiques li div p:nth-child(2){
+ font-weight: bold;
+ margin-top: 7px;
+ margin-bottom: 10px;
+}
+
+.politiques li div img{
+ width: 25px;
+}
+
+.politiques li:nth-child(1){
+  background-image: url(../img/01.jpg);
+}
+
+.politiques li:nth-child(2){
+  background-image: url(../img/02.jpg);
+}
+
+.politiques li:nth-child(3){
+  background-image: url(../img/03.jpg);
+}
+
+.politiques li:nth-child(4){
+  background-image: url(../img/04.jpg);
+}
+
+.politiques li:nth-child(5){
+  background-image: url(../img/05.jpg);
+}
+
+.politiques li:nth-child(6){
+  background-image: url(../img/06.jpg);
+}
+
+.politiques li:nth-child(7){
+  background-image: url(../img/07.jpg);
+}
+
+.video{
+  margin: 40px 0px;
+}
+
+.paragraph {
+    background: white;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .paragraph a:hover {
+    text-decoration: none;
+    color: #FFF;
+    border: 2px solid #F55668;
+    border-radius: 40px;
+    background: #F55668;
+}
+
+.truc  {
+    font-size: 1.2em;
+    text-align: center;
+    color: pink;
+    border-radius: 100px;
+  }
+
+  .truc :hover {
+    background-color: #F55668;
+    color: #1D1742;
+}
+
+.machin{
+  text-align: center;
+}
+
+
+@keyframes slideIn {
+    0%  {color:#FF1493;}
+    50%  {color:#00CED1;}
+    100%  {color:#FF0000;}
+}
+
+@keyframes tourne {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
